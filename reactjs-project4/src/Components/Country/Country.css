@@ -1,0 +1,13 @@
+.country{
+    background-color: cornflowerblue;
+    color: rgb(100, 3, 3);
+    /* width: 850px; */
+    /* margin-left:32%; */
+    border-radius: 20px;
+    border:5px solid yellow;
+      margin-top:20px;
+  
+  }
+  .country img{
+    width:180px;
+  }
