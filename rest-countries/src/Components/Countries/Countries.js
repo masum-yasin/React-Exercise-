@@ -13,8 +13,10 @@ const Countries = () => {
     return (
         <div>
             <h1>Another Country another Culture{Countries.length}</h1>
+            {/* {
+                Countries.map(country =><Country country={country}></Country>)  */}
             {
-                Countries.map(country =><Country country={country} name={country.name.common}  ></Country>) 
+                Countries.map(country =><Country country={country}></Country>)
             }
         </div>
     );
