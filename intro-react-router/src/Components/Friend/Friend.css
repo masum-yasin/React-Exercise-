@@ -1,0 +1,9 @@
+.friend{
+    background-color: black;
+    color: yellow;
+    padding: 10px;
+    border: 3px solid red;
+    border-radius: 15px;
+    /* margin: 10px; */
+   
+}
