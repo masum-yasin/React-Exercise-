@@ -12,6 +12,9 @@ import Header from './Components/Header/Header.jsx';
 import Home from './Components/Home/Home.jsx';
 import First from './Components/First_page/First.jsx';
 import Friends from './Components/Friends/Friends.jsx';
+import FriendDetails from './Components/First_page/FriendDetails/FriendDetails.jsx';
+import Posts from './Posts/Posts.jsx';
+
 // const router = createBrowserRouter([
 //   {
 //     path:'/',
@@ -43,14 +46,30 @@ const router = createBrowserRouter([
     
     },
     {
+        path:'posts',
+        element:<Posts></Posts>,
+        loader:() => fetch("https://jsonplaceholder.typicode.com/posts")
+    },
+   
+    {
+      path:'friend/:friendId',
+      element:<FriendDetails></FriendDetails>,
+      loader:({params}) => fetch(`https://jsonplaceholder.typicode.com/users/${params.friendId}`)
+    },
+    {
       path:'friends',
       element:<Friends></Friends>,
       loader:() => fetch("https://jsonplaceholder.typicode.com/users")
     },
     {
       path:'contact',
-      element:<Contact></Contact>
+      element:<Contact></Contact>,
+     
     },
+    {
+      path:'*',
+      element: <div>This is Wrong path</div>
+    }
    
   ]
   }
