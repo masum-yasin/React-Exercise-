@@ -1,0 +1,12 @@
+.footer{
+    background-color: black;
+    color: white;
+}
+.footer nav a {
+    text-decoration: none;
+    margin-right: 10px;
+    color: white;
+}
+.fontaswsome{
+    color: white;
+}

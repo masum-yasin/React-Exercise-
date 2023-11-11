@@ -14,7 +14,7 @@ const Countries = () => {
     return (
         <>
             <h1 style={{color:'red'}}>Over All Country Information In The World</h1>
-           <div  className='countries-container'>
+           <div  className='countries-container text-center bg-dark'>
            {
                 countries.map(country => <Country country={country}key={country.ccas}></Country>)
             }
