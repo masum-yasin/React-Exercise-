@@ -14,6 +14,7 @@ import First from './Components/First_page/First.jsx';
 import Friends from './Components/Friends/Friends.jsx';
 import FriendDetails from './Components/First_page/FriendDetails/FriendDetails.jsx';
 import Posts from './Posts/Posts.jsx';
+import PostDetail from './PostDetails/PostDetail.jsx';
 
 // const router = createBrowserRouter([
 //   {
@@ -44,6 +45,11 @@ const router = createBrowserRouter([
       element:<About></About>
     
     
+    },
+    {
+      path:'post/:postId',
+      element:<PostDetail></PostDetail>,
+      loader:({params}) => fetch(`https://jsonplaceholder.typicode.com/posts/${params.postId}`)
     },
     {
         path:'posts',
