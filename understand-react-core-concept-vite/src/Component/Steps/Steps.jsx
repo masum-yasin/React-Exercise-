@@ -6,9 +6,7 @@ const Steps = () => {
        const nextSteps = steps+1;
        setSteps(nextSteps)
   }
- useEffect ( ()=>{
-    console.log(steps);
- },[steps])
+ 
     return (
         <div>
            <h3>This is my Smart Watch.....!</h3> 
