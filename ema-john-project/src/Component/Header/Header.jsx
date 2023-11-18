@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from '../../images/Logo.svg'
 import './Header.css'
+import ActiveLink from '../ActiveLink/ActiveLink';
 
 const Header = () => {
     return (
@@ -8,6 +9,7 @@ const Header = () => {
            <img src={logo}  alt="" />
            <div>
             <a href="/shop">Shop</a>
+            {/* <ActiveLink to='/'>Home</ActiveLink> */}
             <a href="/shop"></a>
             <a href="/order">Order</a>
             <a href="/inventory">Inventory</a>
