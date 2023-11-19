@@ -40,4 +40,7 @@ position: relative;
 .btn-cart:hover{
     background-color: orange;
 }
+.product p{
+   margin-bottom: 0px;
+}
 

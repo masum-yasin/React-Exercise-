@@ -1,6 +1,10 @@
 .cart-container{
-    background-color: #f5d9aed5;
+    background-color: #d8993b7d;
     padding: 25px;
+    position: sticky;
+    top: 0px;
+ color:maroon
+    
 }
 .cart-container p{
     font-size: 15px;
