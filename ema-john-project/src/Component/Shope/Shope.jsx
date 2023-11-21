@@ -13,23 +13,27 @@ const Shope = () => {
         .then(data =>setProducts(data))
     },[]);
     useEffect(()=>{
-        const storeCart = getShoppingCart();
+        const storeCart =  getShoppingCart();
         // step 1 get id the added product//
         for(const id in storeCart){
             //step 2 get product from the product//
             const addedProduct = products.find(product =>product.id ==id)
+            if(addedProduct){
+                // const quantity =storeCart[id],
+                // const addedProduct.quantity =   quantity
+            }
             console.log('added Product',addedProduct);
         }
 
 
-    },[])
+    },[products])
    
         
  
     const handleToAddCart = (product)=>{
        const newCart = [...cart, product];
        setCart(newCart);
-    //    addToDb(product.id)
+       addToDb(product.id)
     }
    
     return (

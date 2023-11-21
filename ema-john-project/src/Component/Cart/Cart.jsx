@@ -4,7 +4,7 @@ import './Cart.css';
 
 const Cart = (props) => {
     // const cart = props.cart
-    console.log(props);
+    // console.log(props);
     const {cart} = props;
 console.log(cart);
     let Total = 0;
@@ -12,6 +12,7 @@ console.log(cart);
     for(const product of cart){
         Total = Total+product.price;
         Totalshipping = Totalshipping + product.shipping
+        // quantity = quantity+product.quantity
     }
     const tax = Total*7/100;
     const grandprice = Total + Totalshipping+tax;
