@@ -7,6 +7,6 @@ import Main from './Components/Router/Routers';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
- <Main></Main>
+ <App></App>
   </React.StrictMode>
 );

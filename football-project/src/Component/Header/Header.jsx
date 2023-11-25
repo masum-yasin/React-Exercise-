@@ -7,6 +7,7 @@ const Header = () => {
     return (
         <nav className='header'>
          <img src={'image/logo2-removebg-preview.png'} alt="" />
+       
          <div>
         <Link to='/'>Home</Link>
        <Link to='/about'>About</Link>
@@ -14,6 +15,7 @@ const Header = () => {
        <Link to='/service'>Service</Link>
         <Link href="contact">Contact</Link>
          <Link href="blog">Blog</Link>   
+        
          </div>
         </nav>
     );
