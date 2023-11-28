@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+  import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 const ServiceC = () => {
     return (
@@ -12,33 +14,59 @@ const ServiceC = () => {
             <div className="row g-4 wow fadeInUp" data-wow-delay="0.3s">
                 <div className="col-lg-4">
                     <div className="nav w-100 nav-pills me-4">
-                        <button className="nav-link w-100 d-flex align-items-center text-start p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
+                        <button className="nav-link w-100 text-start p-4 mb-4 active" data-bs-toggle="pill" data-bs-target="#tab-pane-1" type="button">
+                            <div className='d-flex align-items-center text-start'>
                             <i className="fa fa-car-side fa-2x me-3"></i>
-                            <h4 className="m-0">Diagnostic Test</h4>
+                            <h5 className="m-0">Diagnostic Test</h5><br/>
+                            </div>
+                            <h5 className="ms-5">Add to Cart <FontAwesomeIcon icon={faShoppingCart} /></h5>
                         </button>
-                        <button className="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+                        <button className="nav-link w-100  p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-2" type="button">
+                            <div className='d-flex align-items-center text-start'>
                             <i className="fa fa-car fa-2x me-3"></i>
-                            <h4 className="m-0">Engine Servicing</h4>
+                            <h5 className="m-0">Engine Servicing</h5>
+                            </div>
+                            <h5 className= "pe-5">Add to Cart <FontAwesomeIcon icon={faShoppingCart} /></h5>
                         </button>
-                        <button className="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
-                            <i className="fa fa-cog fa-2x me-3"></i>
+                        <button className="nav-link w-100 p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-3" type="button">
+                           <div className='d-flex align-items-center text-start'>
+                           <i className="fa fa-cog fa-2x me-3"></i>
                             <h4 className="m-0">Tires Replacement</h4>
+                           </div>
+                           <h5 className='pe-5'>Add to Cart <FontAwesomeIcon icon={faShoppingCart} /></h5>
+
                         </button>
-                        <button className="nav-link w-100 d-flex align-items-center text-start p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
+                        <button className="nav-link w-100  p-4 mb-4" data-bs-toggle="pill" data-bs-target="#tab-pane-4" type="button">
+                            <div className='d-flex align-items-center text-start'>
                             <i className="fa fa-oil-can fa-2x me-3"></i>
-                            <h4 className="m-0">Oil Changing</h4>
+                            <h5 className="m-0">Oil Changing</h5>
+                            </div>
+                            <h5 className="ms-0 pe-5">Add to Cart <FontAwesomeIcon icon={faShoppingCart} /></h5>
+
                         </button>
-                        <button className="nav-link w-100 d-flex align-items-center text-start p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-5" type="button">
-                    
-                            <h4 className="m-0">Battery replacement</h4>
+                        <button className="nav-link w-100  p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-5" type="button">
+                       <div className='d-flex align-items-center text-start'>
+                       <i className="fa fa-cog fa-2x me-3"></i>
+                            <h5 className="m-0">Battery replacement</h5>
+                       </div>
+                            <h5 className='pe-5'>Add to Cart <FontAwesomeIcon icon={faShoppingCart} /></h5>
+
                         </button>
-                        <button className="nav-link w-100 d-flex align-items-center text-start p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-6" type="button">
-                    
-                    <h4 className="m-0">Wiper blades replacement</h4>
+                        <button className="nav-link w-100 p-4 mb-0 mt-4" data-bs-toggle="pill" data-bs-target="#tab-pane-6" type="button">
+                       <div className='d-flex align-items-center text-start'>
+                       <i className="fa fa-cog fa-2x me-3"></i>
+                    <h5 className="m-0">Wiper replacement</h5>
+                       </div>
+                    <h5 className='pe-5'>Add to Cart <FontAwesomeIcon icon={faShoppingCart} /></h5>
+
                 </button>
-                <button className="nav-link w-100 d-flex align-items-center text-start p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-7" type="button">
-                    
-                    <h4 className="m-0">Brake Repairment</h4>
+                <button className="nav-link w-100 p-4 mb-0 mt-4" data-bs-toggle="pill" data-bs-target="#tab-pane-7" type="button">
+                <div className=' d-flex align-items-center text-start'>
+                <i className="fa fa-cog fa-2x me-3"></i>
+                    <h5 className="m-0">Brake Repairment</h5>
+                </div>
+                    <h5 className='pe-5'>Add to Cart <FontAwesomeIcon icon={faShoppingCart} /></h5>
+
                 </button>
                         
                         
@@ -83,7 +111,7 @@ const ServiceC = () => {
                                     <p><i className="fa fa-check text-success me-3"></i>Quality Servicing</p>
                                     <p><i className="fa fa-check text-success me-3"></i>Expert Workers</p>
                                     <p><i className="fa fa-check text-success me-3"></i>Modern Equipment</p>
-                                    <h3 className='bg-warning text-white mt-5 'style={{borderRadius:"15px"}}>$550</h3>
+                                    <h3 className='bg-warning text-white mt-5 'style={{borderRadius:"15px"}}> Service Price : $550</h3>
 
                                     <a href="" className="btn btn-primary py-3 px-5 mt-3">Read More<i className="fa fa-arrow-right ms-3"></i></a>
                                 </div>
@@ -103,7 +131,7 @@ const ServiceC = () => {
                                     <p><i className="fa fa-check text-success me-3"></i>Quality Servicing</p>
                                     <p><i className="fa fa-check text-success me-3"></i>Expert Workers</p>
                                     <p><i className="fa fa-check text-success me-3"></i>Modern Equipment</p>
-                                    <h3 className='bg-warning text-white mt-5 'style={{borderRadius:"15px"}}>$1150</h3>
+                                    <h3 className='bg-warning text-white mt-5 'style={{borderRadius:"15px"}}> Service Price:$1150</h3>
                                     <a href="" className="btn btn-primary py-3 px-5 mt-3">Read More<i className="fa fa-arrow-right ms-3"></i></a>
 
                                 </div>
@@ -123,7 +151,7 @@ const ServiceC = () => {
                                     <p><i className="fa fa-check text-success me-3"></i>Quality Servicing</p>
                                     <p><i className="fa fa-check text-success me-3"></i>Expert Workers</p>
                                     <p><i className="fa fa-check text-success me-3"></i>Modern Equipment</p>
-                                    <h3 className='bg-warning text-white mt-5 'style={{borderRadius:"15px"}}>$630</h3>
+                                    <h3 className='bg-warning text-white mt-5 'style={{borderRadius:"15px"}}> Service Price:$630</h3>
 
                                     <a href="" className="btn btn-primary py-3 px-5 mt-3">Read More<i className="fa fa-arrow-right ms-3"></i></a>
                                 </div>
@@ -143,7 +171,7 @@ const ServiceC = () => {
                                     <p><i className="fa fa-check text-success me-3"></i>Quality Servicing</p>
                                     <p><i className="fa fa-check text-success me-3"></i>Expert Workers</p>
                                     <p><i className="fa fa-check text-success me-3"></i>Modern Equipment</p>
-                                    <h3 className='bg-warning text-white mt-5 'style={{borderRadius:"15px"}}>$950</h3>
+                                    <h3 className='bg-warning text-white mt-5 'style={{borderRadius:"15px"}}> Service Price:$950</h3>
 
                                     <a href="" className="btn btn-primary py-3 px-5 mt-3">Read More<i className="fa fa-arrow-right ms-3"></i></a>
                                 </div>
@@ -163,7 +191,7 @@ const ServiceC = () => {
                                     <p><i className="fa fa-check text-success me-3"></i>Quality Servicing</p>
                                     <p><i className="fa fa-check text-success me-3"></i>Expert Workers</p>
                                     <p><i className="fa fa-check text-success me-3"></i>Modern Equipment</p>
-                                    <h3 className='bg-warning text-white mt-5 'style={{borderRadius:"15px"}}>$450</h3>
+                                    <h3 className='bg-warning text-white mt-5 'style={{borderRadius:"15px"}}> Service Price:$450</h3>
 
                                     <a href="" className="btn btn-primary py-3 px-5 mt-3">Read More<i className="fa fa-arrow-right ms-3"></i></a>
                                 </div>
@@ -183,7 +211,7 @@ const ServiceC = () => {
                                     <p><i className="fa fa-check text-success me-3"></i>Quality Servicing</p>
                                     <p><i className="fa fa-check text-success me-3"></i>Expert Workers</p>
                                     <p><i className="fa fa-check text-success me-3"></i>Modern Equipment</p>
-                                    <h3 className='bg-warning text-white mt-5 'style={{borderRadius:"15px"}}>$1020</h3>
+                                    <h3 className='bg-warning text-white mt-5 'style={{borderRadius:"15px"}}> Serice Price:$1020</h3>
 
                                     <a href="" className="btn btn-primary py-3 px-5 mt-3">Read More<i className="fa fa-arrow-right ms-3"></i></a>
                                 </div>
