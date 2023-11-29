@@ -44,7 +44,7 @@ const ServiceC = () => {
                             <h5 className="ms-0 pe-5">Add to Cart <FontAwesomeIcon icon={faShoppingCart} /></h5>
 
                         </button>
-                        <button className="nav-link w-100  p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-5" type="button">
+                        {/* <button className="nav-link w-100  p-4 mb-0" data-bs-toggle="pill" data-bs-target="#tab-pane-5" type="button">
                        <div className='d-flex align-items-center text-start'>
                        <i className="fa fa-cog fa-2x me-3"></i>
                             <h5 className="m-0">Battery replacement</h5>
@@ -67,7 +67,7 @@ const ServiceC = () => {
                 </div>
                     <h5 className='pe-5'>Add to Cart <FontAwesomeIcon icon={faShoppingCart} /></h5>
 
-                </button>
+                </button> */}
                         
                         
                     </div>
