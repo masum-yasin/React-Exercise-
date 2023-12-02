@@ -1,0 +1,36 @@
+[
+    {
+      "id": 1,
+      "name": "Standard",
+      "price": 30.00,
+      "features": [
+        "Access to gym facilities",
+        "Cardio equipment"
+      
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Premium",
+      "price": 50.00,
+      "features": [
+        "Access to gym facilities",
+        "Cardio equipment",
+        "Strength training equipment"
+        
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Platinum",
+      "price": 80.00,
+      "features": [
+        "Access to gym facilities",
+        "Cardio equipment",
+        "Strength training equipment"
+       
+        
+      ]
+    }
+  ]
+  
