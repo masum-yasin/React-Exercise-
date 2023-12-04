@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import Cart from '../Cart/Cart';
-import { useLoaderData } from 'react-router-dom';
+import { Link, useLoaderData } from 'react-router-dom';
 import ReviewItem from '../ReviewItem/ReviewItem';
 import './Order.css'
 import { deleteShoppingCart, removeFromDb } from '../../utilities/fakedb';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 const Orders = () => {
    const savedCart = useLoaderData();
@@ -29,7 +31,11 @@ return (
             <div className='cart-container'>
           <Cart 
           cart={cart}
-          handleClearCart={handleClearCart}></Cart>
+          handleClearCart={handleClearCart}>
+           <Link className='link-style' to='/checkout'>
+            <button className='proceed-btn'>Proceed Checkout <FontAwesomeIcon icon={faArrowRight} /> </button>
+           </Link>
+          </Cart>
             </div>
         </div>
     );
