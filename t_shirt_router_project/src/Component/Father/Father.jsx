@@ -3,11 +3,11 @@ import Myself from '../Myself/Myself';
 import Brother from '../Brother/Brother';
 import Sister from '../Sister/Sister';
 
-const Father = () => {
+const Father = ({ring}) => {
     return (
         <div>
             <h2>Father</h2>
-            <Myself></Myself>
+            <Myself ring={ring}></Myself>
             <Brother></Brother>
             <Sister></Sister>
             
