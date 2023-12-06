@@ -3,7 +3,10 @@ import {useLoaderData} from 'react-router-dom'
 import TShirt from '../TShirt/TShirt';
 import Cart from '../Cart/Cart';
 import './Home.css';
-import toast  from 'react-hot-toast';
+import toast from 'react-hot-toast';
+
+
+
 
 
 const Home = () => {
