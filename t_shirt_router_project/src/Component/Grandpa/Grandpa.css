@@ -5,6 +5,7 @@
     margin: 10px;
     text-align: center;
     margin-top:30px;
+    width: fit-content;
 }
 .flex{
     display: flex;
