@@ -3,7 +3,7 @@ import React from 'react';
 const Footer = () => {
     return (
         <div>
-          <p>  This is Header Page</p>
+          <p class="p-3 mb-2 bg-primary text-danger">This is Footer  Page</p>
         </div>
     );
 };

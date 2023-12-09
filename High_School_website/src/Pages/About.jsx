@@ -1,9 +1,10 @@
 import React from 'react';
+import AboutC from '../Component/AboutC/AboutC';
 
 const About = () => {
     return (
         <div>
-            <h1>This is About Page</h1>
+           <AboutC></AboutC>
         </div>
     );
 };
