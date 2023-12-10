@@ -5,7 +5,52 @@
 /* .my-card-img:hover {
     transform: scale(1.2);
 } */
-.education-course{
-    width:400px;
-    margin-top: 70px;
+/* Course Section Start */
+.courses-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    margin-top: 50px;
+    text-align: center;
 }
+.courses-icon{
+ display: flex;
+ gap:50px;
+ justify-content: center;
+ align-items: center;
+ margin-top: 10px;
+ 
+}
+.courses-price{
+    border-radius:30px;
+    margin-left: 80%;
+  
+}
+h2 button.courses-price{
+ margin-bottom:-50%;
+ background-color:orange;
+ 
+}
+.button-2{
+    background-color: darkblue;
+    color: aliceblue;
+    width: 100px;
+    margin-top: 20px;
+    margin-bottom:20px;
+    
+}
+ img:hover{
+    transform: scale(1.2);
+    transition: all 0.3s ease 0s;
+}
+.img-transform h4{
+    background-color:teal;
+  color: white;
+  border-radius: 15px;
+  text-align: center;
+  
+}
+
+
+

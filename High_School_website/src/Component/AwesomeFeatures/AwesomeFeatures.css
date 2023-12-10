@@ -8,5 +8,7 @@
     width:80px;
 }
 .awesome-card:hover{
-    background-color:yellow;
+    background-color:darkcyan;
+    color: white;
+    
 }
