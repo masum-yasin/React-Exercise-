@@ -7,3 +7,6 @@
 .card img{
     width:80px;
 }
+.awesome-card:hover{
+    background-color:yellow;
+}
