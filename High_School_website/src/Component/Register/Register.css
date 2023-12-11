@@ -1,10 +1,28 @@
-.register-section h1  {
-    background-color: rgb(8, 8, 89);
+.register-section  {
+    background-color: rgb(4, 4, 57);
     height: 500px;
-    color: white;
-    font-size:45px;
-    margin-top:90px;
+    margin-top: 90px;
+    
 }
 .register-section p{
     color: wheat;
+    font-size: 20px;
 }
+.register-heading h1{
+    font-size: 50px;
+    color: white;
+}
+.register-heading{
+    margin-top:50px;
+    margin-left: 100px;
+}
+.register-button button{
+    font-size:35px;
+    margin-left:5px;
+    padding:30px;
+    background-color:rgb(48, 92, 92) ;
+color: white;
+  }
+  .register-section{
+    display: flex;
+  }

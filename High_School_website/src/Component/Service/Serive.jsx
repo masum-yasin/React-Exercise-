@@ -1,29 +1,36 @@
-import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 
-const Service = () => {
-    const [product, setProduct] = useState([]);
-
-    useEffect(() => {
-        fetch('http://localhost:8080/productsall')
-            .then(res => res.json())
-            .then(data => {
-                console.log(data);
-                setProduct(data);
-            })
-            .catch(error => {
-                console.error('Error fetching data:', error);
-            });
-    }, []);
-
+const Serive = () => {
+    const [products, setProduct] = useState([]);
+    useEffect(()=>{
+            fetch("http://localhost:8080/productsall")
+            .then(res =>res.json())
+            .then(data =>setProduct(data))
+    },[])
+    
     return (
         <div>
-            <h1>All Of service Here</h1>
-            {/* Render your data here, for example: */}
-            {product.map(item => (
-                <div key={item.id}>{item.name}</div>
-            ))}
+           {
+            products.map(product =>(<h4>{product.product}</h4>))
+           }
         </div>
     );
 };
 
-export default Service;
+export default Serive;
+// const Serive = () => {
+//     const [product, setProduct] = useState([]);
+//     useEffect(()=>{
+//         getProduct();
+//     },[])
+//     console.log(product);
+//     const getProduct = ()=>{
+//         axios.get("http://localhost:8080/productsall").then((res)=>setProduct(res.data))
+//     }
+//     return (
+//         <div>
+//             <h1>All Of service Here</h1>
+//         </div>
+//     );
+// };
