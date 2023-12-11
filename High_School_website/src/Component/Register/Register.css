@@ -1,0 +1,10 @@
+.register-section h1  {
+    background-color: rgb(8, 8, 89);
+    height: 500px;
+    color: white;
+    font-size:45px;
+    margin-top:90px;
+}
+.register-section p{
+    color: wheat;
+}
