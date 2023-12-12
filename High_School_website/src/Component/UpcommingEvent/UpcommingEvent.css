@@ -4,6 +4,22 @@
     margin-top: 90px;
 
 }
-.upcomming-event h1{
-    margin-top: 90px;
+.upcomming-header{
+    margin-top: 50px;
+    padding-top:100px;
+    margin-left:40%;
 }
+.upcomming-event p{
+    margin-left: 40%;
+}
+.event-img{
+ margin-left:150px;
+}
+.event-image-main-div img{
+    width:545px;
+}
+.event-image-main-div img:hover{
+    transform: scale(1.2);
+    transition: all 0.3s ease 0s;
+}
+
