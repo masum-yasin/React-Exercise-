@@ -9,7 +9,7 @@ const Course = () => {
      
          <>
             <h2 className='courese-heading fw-bolder'>Oure Popular Coureses</h2>
-            <p className='text-center'>Replenish man have thing gathering lights yielding shall you</p>
+            <p className='text-center fst-italic'>Replenish man have thing gathering lights yielding shall you</p>
      <div className='courses-section'>
      <div>
               <div>

@@ -5,7 +5,7 @@ const AwesomeFeatures = () => {
     return (
         <>
            <h1 className='awesometitle fw-bolder text-bg-dark text-center'>Awesome Feature</h1>
-           <p className=' text-center mb-5'>Replenish man have thing gathering lights yielding shall you</p>
+           <p className=' text-center mb-5 fst-italic'>Replenish man have thing gathering lights yielding shall you</p>
            <div className="card-group">
   <div className=" awesome-card card">
     <img src={'img/features/f1.png'} className="card-img-top" alt="..." />

@@ -1,7 +1,7 @@
 .register-section  {
     background-color: rgb(4, 4, 57);
     height: 500px;
-    margin-top: 90px;
+    margin-top:90px;
     
 }
 .register-section p{
@@ -13,7 +13,7 @@
     color: white;
 }
 .register-heading{
-    margin-top:50px;
+    margin-top:100px;
     margin-left: 100px;
 }
 .register-button button{
@@ -23,6 +23,33 @@
     background-color:rgb(48, 92, 92) ;
 color: white;
   }
-  .register-section{
-    display: flex;
-  }
+  
+  /* Form style start */
+  .courses-form input{
+   color: white;
+   width:320px;
+  padding: 15px;
+  margin-top:8px;
+  font-size:17px;
+
+  
+  
+}
+.courses-form{
+    margin-top:50px ;
+    color: white;
+    font-size: 15px;
+    border-bottom: 1px solid #eeeeee;
+}
+.courses-form button{
+    width:320px;
+    margin-top: 8px;
+    padding: 15px;
+    background-color: orange;
+    color: rgb(6, 6, 48);
+    font-weight: 800;
+}
+.courses-form button:hover{
+    background-color: rgb(3, 3, 52);
+    color: orange;
+}
