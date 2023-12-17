@@ -22,15 +22,26 @@
 }
 .link_page a{
     text-decoration: none;
-    margin-left:20px;
+    margin-left:15px;
     color: #fff;
     position: relative;
 }
 .welcome-img-section{
-    margin-top:80px;
-    margin-left:60px;
-    margin-right:60px;
+    margin-top:110px;
+    margin-left:130px;
+   
 }
 .welcome-img-section img {
     width:550px;
+}
+.about-button{
+    padding:10px;
+    width: 300px;
+    margin-top:10px;
+    background-color: orange;
+    color: darkblue;
+}
+.about-button:hover{
+    background-color: rgb(11, 11, 67);
+    color: white;
 }

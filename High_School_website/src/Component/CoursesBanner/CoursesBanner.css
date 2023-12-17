@@ -1,0 +1,31 @@
+.courses-banner{
+    background-image: url('img/banner/banner.jpg');
+    height: 400px;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+
+  
+}
+.courses-banner{
+    background-color: rgb(2, 2, 12);
+    backdrop-filter: blur(10px);
+
+}
+.courses-banner h1{
+    text-align: center;
+    padding-top:130px;
+    color:white;
+    font-size:50px;
+    /* margin-top:60px; */
+   
+}
+.courses-link{
+ text-align: center;
+ }
+ .courses-link a{
+ text-decoration: none;
+ margin-left: 15px;
+ color: white;
+ font-size: 20px;
+ }

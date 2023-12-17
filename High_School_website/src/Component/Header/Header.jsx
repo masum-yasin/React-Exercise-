@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
  <>
- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+ <nav class="main-navbar navbar navbar-expand-lg navbar-light bg-light">
         
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><img src={'img/logo.jpg'} 
@@ -41,8 +41,8 @@ const Header = () => {
                     Courses
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="#">Course</a></li>
-                  <li><a class="dropdown-item" href="#">Courses Details   </a></li>
+                  <li><Link to='/coursesbanner' class="dropdown-item" href="#">Course</Link></li>
+                  <li><Link to='/coursedetails' class="dropdown-item" href="#">Courses Details   </Link></li>
                   
                 </ul>
               </li>
