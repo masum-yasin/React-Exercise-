@@ -1,5 +1,7 @@
 import React from 'react';
 import './UpcommingEvent.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 const UpcommingEvent = () => {
     return (
@@ -17,12 +19,11 @@ const UpcommingEvent = () => {
             <div className="col-md-6">
                 <img src={'img/event/e1.jpg'} alt="" />
             </div>
-          </div>
+            </div>
+            <h6 className=' upcomming-arrow text-center mt-5 text-warning'>View All Event <FontAwesomeIcon icon={ faArrowRight}  size="lg"/></h6>
         
           </div>
-         
-            
-        </>
+            </>
     );
 };
 

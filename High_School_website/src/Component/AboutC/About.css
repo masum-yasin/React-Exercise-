@@ -1,0 +1,36 @@
+.about-section{
+    background-image: url('img/banner/banner.jpg');
+    height:350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+.about_content h2{
+    color: #fff;
+    font-size:45px;
+   
+   text-align:center !important;
+   padding-top:140px;
+   font-weight:600;
+}
+.link_page{
+    text-align: center !important;
+    font-size:15px;
+     text-transform: capitalize;
+     font-family:Arial, Helvetica, sans-serif;
+}
+.link_page a{
+    text-decoration: none;
+    margin-left:20px;
+    color: #fff;
+    position: relative;
+}
+.welcome-img-section{
+    margin-top:80px;
+    margin-left:60px;
+    margin-right:60px;
+}
+.welcome-img-section img {
+    width:550px;
+}

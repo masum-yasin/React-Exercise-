@@ -1,6 +1,6 @@
 .upcomming-event{
     background-color: rgb(10, 10, 63);
-    height:700px;
+    height:720px;
     margin-top: 90px;
 
 }
@@ -13,13 +13,14 @@
     margin-left: 40%;
 }
 .event-img{
- margin-left:150px;
+ margin-left:110px;
 }
 .event-image-main-div img{
     width:545px;
 }
 .event-image-main-div img:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition: all 0.3s ease 0s;
 }
+
 

@@ -1,0 +1,24 @@
+.footer-section{
+    background-color: rgb(12, 12, 63);
+    height: 600px;
+    margin-top:70px;
+    display:flex;
+    gap:8px;
+    
+}
+.footer-heading{
+   padding-top: 80px;
+   margin-left: 80px;
+   color: white;
+  
+}
+.footer-form input{
+background-color:yellow;
+color: white;
+border: none;
+border-bottom: 1px solid gray;
+padding: 10px;
+}
+
+
+   

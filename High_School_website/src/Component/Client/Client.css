@@ -1,0 +1,20 @@
+.client-heading{
+    margin-top:70px;
+}
+.client-section{
+    margin-top:50px;
+}
+.client-img{
+    width:320px;
+}
+.client-after-img-heading:hover{
+    background-color:darkcyan;
+    color: white;
+
+}
+/* img after style */
+.client-after-img-heading{
+    margin-top: 20px;
+}
+
+

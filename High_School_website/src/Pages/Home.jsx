@@ -6,6 +6,7 @@ import Register from '../Component/Register/Register';
 import Serive from '../Component/Service/Serive';
 import ExpertTrainer from '../Component/ExpertTrainer/ExpertTrainer';
 import UpcommingEvent from '../Component/UpcommingEvent/UpcommingEvent';
+import Client from '../Component/Client/Client';
 
 const Home = () => {
    
@@ -17,6 +18,7 @@ const Home = () => {
             <Register></Register>
             <ExpertTrainer></ExpertTrainer>
             <UpcommingEvent></UpcommingEvent>
+            <Client></Client>
         
             
         </div>
