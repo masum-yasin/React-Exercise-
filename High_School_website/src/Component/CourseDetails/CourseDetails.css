@@ -5,3 +5,27 @@
     background-size: cover;
     background-position: center;
 }
+.courseDetails h1{
+    text-align: center;
+    color: white;
+    padding-top:180px;
+    font-size: 40px;
+}
+.coursedetails-pagelink{
+    text-align: center;
+
+}
+.coursedetails-pagelink a{
+    text-decoration: none;
+    color: white;
+    margin-left: 15px;
+}
+.coursedetails-img img{
+    width: 700px;
+  
+    margin-left:70px;
+
+}
+.coursedetails-img{
+    margin-top:140px;
+}
