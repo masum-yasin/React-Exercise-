@@ -1,6 +1,8 @@
 import React from 'react';
 import './CourseDetails.css'
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+  import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 const CourseDetails = () => {
     return (
@@ -56,7 +58,7 @@ const CourseDetails = () => {
                         <h5 className='text-danger'>Provide Your Rating</h5>
                         <div>
                             <div><h5>Quality</h5></div>
-                            <div></div>
+                            <div><FontAwesomeIcon icon={faStar} /></div>
                         </div>
                       
                      </div>
