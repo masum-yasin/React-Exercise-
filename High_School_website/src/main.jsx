@@ -20,13 +20,14 @@ const router = createBrowserRouter([
             path:'about',
             element:<About/>
           },
-          {
-            path:'coursesbanner',
-            element:<Courses></Courses>
-          },
+          
           {
             path:'coursedetails',
             element:<CoursesDetails></CoursesDetails>
+          },
+          {
+            path:'course',
+            element:<Courses></Courses>
           }
         ]
       }

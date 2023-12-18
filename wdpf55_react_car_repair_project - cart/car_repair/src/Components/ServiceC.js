@@ -6,7 +6,7 @@ import SingleService from "./SingleService";
 const ServiceC = () => {
   const [product, setProduct] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:8080/productsall")
+    fetch('http://localhost:8080/productsall')
       .then((res) => res.json())
       .then((data) => setProduct(data));
   }, []);
@@ -395,7 +395,7 @@ const ServiceC = () => {
 
          <div className="row">
          {product.map((item) => (
-              <SingleService data={item}/>
+              <SingleService data={item} key={item.id}/>
             ))}
          </div>
           </div>

@@ -1,31 +1,82 @@
+/* Detailsheader start */
+
 .courseDetails{
     background-image:url('img/banner/banner.jpg');
     height: 400px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 .courseDetails h1{
     text-align: center;
     color: white;
     padding-top:180px;
     font-size: 40px;
+    position: relative;
+}
+.courseDetails::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    background:rgba(0, 35, 71, 0.8);
 }
 .coursedetails-pagelink{
     text-align: center;
+    position: relative;
 
 }
 .coursedetails-pagelink a{
     text-decoration: none;
     color: white;
     margin-left: 15px;
+    position: relative;
 }
+/* Detailsheader Ending */
+
 .coursedetails-img img{
     width: 700px;
+    height: 400px;
   
-    margin-left:70px;
+    margin-left:40px;
 
 }
 .coursedetails-img{
     margin-top:140px;
+}
+
+
+.course-information{
+ width: 600px;
+ margin-left:70px;
+}
+/* Button information Start */
+.coursedetails-button{
+width: 400px;
+padding:15px;
+margin-left:70px;
+margin-top:30px;
+background-color:rgb(12, 12, 46);
+color: orange;
+}
+.coursedetails-button:hover{
+    background-color:orange;
+   color:white;
+}
+/* button information Ending */
+.objectmaindiv{
+    margin-top: 70px;
+}
+
+.objectmaindiv hr{
+    width:550px;
+    color:red;
+  margin-left:150px;
+}
+.objectheading h2{
+    margin-left:150px;
 }
