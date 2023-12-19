@@ -2,7 +2,7 @@ import React from 'react';
 import './CourseDetails.css'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-  import { faStar } from '@fortawesome/free-solid-svg-icons'
+  import { faStar} from '@fortawesome/free-solid-svg-icons'
 
 const CourseDetails = () => {
     return (
@@ -55,15 +55,73 @@ const CourseDetails = () => {
                      </div>
                      <div className="review col-md-5">
                         <h2 className='text-warning'>Reviews</h2>
-                        <h5 className='text-danger'>Provide Your Rating</h5>
-                        <div>
+                        <h5 className='text-danger mt-2'>Provide Your Rating</h5>
+                        <div className='d-flex gap-5 mt-2'>
                             <div><h5>Quality</h5></div>
-                            <div><FontAwesomeIcon icon={faStar} /></div>
+                            <div className='coursedetails-icon'><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></div>
+                            <div><h5>Outstanding</h5></div>
                         </div>
-                      
+                        <div className='d-flex gap-5 mt-2'>
+                            <div><h5>Quality</h5></div>
+                            <div className='coursedetails-icon'><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></div>
+                            <div><h5>Outstanding</h5></div>
+                        </div>
+                        <div className='d-flex gap-5 mt-2'>
+                            <div><h5>Quality</h5></div>
+                            <div className='coursedetails-icon'><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></div>
+                            <div><h5>Outstanding</h5></div>
+                        </div>
+                            <h6 className='mt-2'>Your Feedback</h6>
+                           <form action="">
+                           <textarea className='feedback-content' name="feedback" id="" cols="10" rows="10" ></textarea><br></br>
+                            <button className='feedbackbutton mt-1'>SUBMIT</button>
+                           </form>
                      </div>
                      </div>
+                     {/* eligibility-section start */}
+                    <div className="eligibility-section row">
+                        <div className="col-md-7">
+                            <h3 className='text-warning'>Eligibility</h3>
+                            <hr />
+                            <p className='text-center mt-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br></br>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br></br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute<br></br> irure dolor in reprehenderit in voluptate velit esse cillum.
+
+                    Lorem ipsum dolor sit<br></br> amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore<br></br> et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br></br> ullamco laboris nisi ut aliquip ex ea commodoconsequat. Duis aute irure dolor<br></br> in reprehenderit in voluptate velit esse cillum.</p>
                     
+                    <p className='mt-4 text-center'>Lorem ipsum dolor sit amet,<br></br> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et<br></br> dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br></br> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure<br></br> dolor in reprehenderit in voluptate velit esse cillum.</p>
+                        </div>
+                        <div className="col-md-5">
+                           <div className='d-flex gap-5'>
+                           <div>
+                                <img className='mt-4' src={'img/blog/c1.jpg'} alt="" />
+                            </div>
+                            <div>
+                                <h6 className='coursedetails-icon'>Emilly Blunt  <FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></h6>
+                                <p>Lorem ipsum dolor sit amet,<br></br>consectetur adipisicing elit,<br></br> sed do eiusmod tempor incididunt<br></br> ut labore et dolore.</p>
+                            </div>
+                           </div>
+                            <div className="d-flex gap-5">
+                            <div>
+                                <img className='mt-4' src={'img/blog/c2.jpg'} alt="" />
+                            </div>
+                            <div>
+                                <h6 className='coursedetails-icon'>Maria Luna <FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></h6>
+                                <p>Lorem ipsum dolor sit amet,<br></br>consectetur adipisicing elit,<br></br> sed do eiusmod tempor incididunt<br></br> ut labore et dolore.</p>
+                            </div>
+                        </div>
+                        <div className="d-flex gap-5">
+                            <div>
+                                <img className='mt-4' src={'img/blog/c3.jpg'} alt="" />
+                            </div>
+                            <div>
+                                <h6 className='coursedetails-icon'>Elsie Cunningham<FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /><FontAwesomeIcon icon={faStar} /></h6>
+                                <p>Lorem ipsum dolor sit amet,<br></br>consectetur adipisicing elit,<br></br> sed do eiusmod tempor incididunt<br></br> ut labore et dolore.</p>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                {/* eligibility-section ending */}
+
+
         </>
     );
 };
