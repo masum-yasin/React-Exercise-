@@ -15,6 +15,7 @@ import TechnicianTeam from './pages/TechnicianTeam';
 import Testimonial from './pages/Testimonial';
 import Contact from './pages/Contact';
 import Cart from './pages/Cart';
+import UserRegistration from './pages/UserRegistration';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -53,7 +54,11 @@ const router = createBrowserRouter([
     },
     {path:'cart',
     element:<Cart></Cart>
-    }
+    },
+    {path:'registertion',
+    element:<UserRegistration></UserRegistration>
+    },
+  
     ]
   },
 ]);

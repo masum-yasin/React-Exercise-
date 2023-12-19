@@ -16,7 +16,7 @@ const CourseDetails = () => {
             </div>
          </div>
          <div className="coursedetails-img  row ">
-            <div className=" col-md-6">
+            <div className=" col-md-6 col-sm-12">
                 <img src={'img/courses/course-details.jpg'} alt="" />
             </div>
             <div className="course-information col-md-6 border border-4 mt-2 text-info rounded-3 p-4 border-success">
@@ -45,15 +45,16 @@ const CourseDetails = () => {
                     <button className='coursedetails-button'>ENROLL THE COURSE</button> 
                     </div>
                      </div>
+                     {/* Object section start  */}
                      <div className="objectmaindiv row ">
-                        <div className="objectheading  col-md-7">
+                        <div className="objectheading  col-md-7 col-sm-12">
                         <h2 className='text-warning'>Objectives</h2>
                      <hr/>
                      <p className='text-center'>When you enter into any new area of science, you almost always find yourself with a<br></br> baffling new language of technical terms to learn before you can converse with the <br></br>experts. This is certainly true in astronomy both in terms of terms that refer to the<br></br> cosmos and terms that describe the tools of the trade, the most prevalent being<br></br> the telescope.</p>
 
                    <p className='mt-5 text-center'> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br></br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis <br></br>nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodoconsequat.<br></br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum. Lorem<br></br> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor<br></br> incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis <br></br>nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br></br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
                      </div>
-                     <div className="review col-md-5">
+                     <div className="review col-md-5 col-sm-12">
                         <h2 className='text-warning'>Reviews</h2>
                         <h5 className='text-danger mt-2'>Provide Your Rating</h5>
                         <div className='d-flex gap-5 mt-2'>
@@ -78,9 +79,10 @@ const CourseDetails = () => {
                            </form>
                      </div>
                      </div>
+                     {/* object section ending */}
                      {/* eligibility-section start */}
                     <div className="eligibility-section row">
-                        <div className="col-md-7">
+                        <div className="col-md-7 col-sm-12">
                             <h3 className='text-warning'>Eligibility</h3>
                             <hr />
                             <p className='text-center mt-4'>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br></br>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud<br></br> exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute<br></br> irure dolor in reprehenderit in voluptate velit esse cillum.
@@ -89,7 +91,7 @@ const CourseDetails = () => {
                     
                     <p className='mt-4 text-center'>Lorem ipsum dolor sit amet,<br></br> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et<br></br> dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation<br></br> ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure<br></br> dolor in reprehenderit in voluptate velit esse cillum.</p>
                         </div>
-                        <div className="col-md-5">
+                        <div className="col-md-5 col-sm-12">
                            <div className='d-flex gap-5'>
                            <div>
                                 <img className='mt-4' src={'img/blog/c1.jpg'} alt="" />
@@ -120,7 +122,26 @@ const CourseDetails = () => {
                         </div>
                         </div>
                 {/* eligibility-section ending */}
-
+                    <div className="allcourse_img row">
+                        <div className="border border-4 p-3 m-lg-4 text-center mt-3 col-md-2 col-sm-12">
+                        <img src={'img/courses_icon/react_img.png'} alt="" />
+                        <h4 className='text-info'>Ract</h4>
+                        <h6>JavaScript Library</h6>
+                        <p>One Page Application</p>
+                        </div>
+                        <div className="border border-4 p-3 m-lg-4 text-center mt-3 col-md-2 col-sm-12">
+                        <img src={'img/courses_icon/angular_img.png'} alt="" />
+                        <h4 className='text-warning'>Angular</h4>
+                        <h6>JavaScript Framework</h6>
+                        <p>One Page Application</p>
+                        </div>
+                        <div className="border border-4 p-3 m-lg-4 text-center mt-3 col-md-2 col-sm-12">
+                        <img src={'img/courses_icon/html_img.png'} alt="" />
+                        <h4 className='text-warning'>HTML</h4>
+                        <h6>Build Up Application</h6>
+                        <p>Hyper Text Markup Language</p>
+                        </div>
+                    </div>
 
         </>
     );

@@ -116,3 +116,8 @@ margin-top: 10px;
 .eligibility-section h3{
     margin-left:90px;
 }
+/* All course image start */
+.allcourse_img img{
+    width: 200px;
+    
+}
