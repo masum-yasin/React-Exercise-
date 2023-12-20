@@ -122,26 +122,73 @@ const CourseDetails = () => {
                         </div>
                         </div>
                 {/* eligibility-section ending */}
+                {/* All Course Section Start */}
                     <div className="allcourse_img row">
-                        <div className="border border-4 p-3 m-lg-4 text-center mt-3 col-md-2 col-sm-12">
+                        <div className="detailscourse-img border border-4 border-info p-1 text-center mt-3 col-md-2 col-sm-12 m-md-2" >
                         <img src={'img/courses_icon/react_img.png'} alt="" />
                         <h4 className='text-info'>Ract</h4>
                         <h6>JavaScript Library</h6>
                         <p>One Page Application</p>
                         </div>
-                        <div className="border border-4 p-3 m-lg-4 text-center mt-3 col-md-2 col-sm-12">
+                        <div className="border border-4 border-danger p-2 text-center mt-3 col-md-2 col-sm-12 m-md-2">
                         <img src={'img/courses_icon/angular_img.png'} alt="" />
-                        <h4 className='text-warning'>Angular</h4>
+                        <h4 className='text-danger'>Angular</h4>
                         <h6>JavaScript Framework</h6>
                         <p>One Page Application</p>
                         </div>
-                        <div className="border border-4 p-3 m-lg-4 text-center mt-3 col-md-2 col-sm-12">
+                        <div className="border border-4 p-2 border-warning  text-center mt-3 col-md-2 col-sm-12 m-md-2">
                         <img src={'img/courses_icon/html_img.png'} alt="" />
                         <h4 className='text-warning'>HTML</h4>
                         <h6>Build Up Application</h6>
                         <p>Hyper Text Markup Language</p>
                         </div>
+                        <div className="border border-4 p-1 border-info  text-center mt-3 col-md-2 col-sm-12 m-md-2">
+                        <img src={'img/courses_icon/wordpress_img.png'} alt="" />
+                        <h4 className='text-info'>Wordpress</h4>
+                        <h6>Content Management System</h6>
+                        <p>Theme and Plugin Development</p>
+                        </div>
+                        <div className="border border-4 p-2 border-dark text-center mt-3 col-md-2 col-sm-12 m-md-2">
+                        <img src={'img/courses_icon/pythen_img.png'} alt="" />
+                        <h4 className='text-warning'>Wordpress</h4>
+                        <h6>Content Management System</h6>
+                        <p>Theme and Plugin Development</p>
+                        </div>
                     </div>
+                    {/* 2nd row All course Section start */}
+                    <div className="allcourse_img row">
+                        <div className="detailscourse-img border border-4 border-success p-1 text-center mt-3 col-md-2 col-sm-12 m-md-2" >
+                        <img src={'img/courses_icon/jquery_img.jpg'} alt="" />
+                        <h4 className='text-warning'>Jquery</h4>
+                        <h6>JavaScript Library</h6>
+                        <p>One Page Application</p>
+                        </div>
+                        <div className="border border-4 border-dark p-2 text-center mt-3 col-md-2 col-sm-12 m-md-2">
+                        <img src={'img/courses_icon/php_img.png'} alt="" />
+                        <h4 className='text-primary'>Hypertext Preprocessor</h4>
+                        <h6>Backend Language</h6>
+                        <p>Control Admin Panel</p>
+                        </div>
+                        <div className="border border-4 p-2 border-danger text-center mt-3 col-md-2 col-sm-12 m-md-2">
+                        <img src={'img/courses_icon/laravel_img.png'} alt="" />
+                        <h5 className='text-success'>Php Framwork Laravel</h5>
+                        <h6>Control a Backend Application</h6>
+                        <p>Hyper Text Markup Language</p>
+                        </div>
+                        <div className="border border-4 p-1 border-info  text-center mt-3 col-md-2 col-sm-12 m-md-2">
+                        <img src={'img/courses_icon/codeginter_img.png'} alt="" />
+                        <h5 className='text-info'>Php Framwork Codenegiter</h5>
+                        <h6>Control a Backend Application</h6>
+                        <p>Control By Admin</p>
+                        </div>
+                        <div className="border border-4 p-2 border-primary text-center mt-3 col-md-2 col-sm-12 m-md-2">
+                        <img src={'img/courses_icon/bootstrap_img.jpg'} alt="" />
+                        <h4 className='text-primary'>Bootstrap-5</h4>
+                        <h6>Style a Web Application</h6>
+                       
+                        </div>
+                    </div>
+
 
         </>
     );
