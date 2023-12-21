@@ -14,6 +14,7 @@ import Service from './pages/Service';
 import TechnicianTeam from './pages/TechnicianTeam';
 import Testimonial from './pages/Testimonial';
 import Contact from './pages/Contact';
+import ServiceDetails from './Components/ServiceDetails';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -36,8 +37,14 @@ const router = createBrowserRouter([
     },
     {
       path:'service',
-      element:<Service></Service>
-    },
+      element:<Service></Service>,
+      loader:() =>fetch("http://localhost:8080/serviceall")
+      },
+      {
+        path:"service/:serviceId",
+        element:<ServiceDetails></ServiceDetails>,
+        loader:({params})=>fetch(`http://localhost:8080/serviceall/${params.serviceId}`)
+      },
     {
       path:'team',
       element:<TechnicianTeam></TechnicianTeam>
@@ -49,7 +56,8 @@ const router = createBrowserRouter([
     {
       path:'contact',
       element:<Contact></Contact>
-    }
+    },
+    
     ]
   },
 ]);
