@@ -3,6 +3,7 @@ import './CourseDetails.css'
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
   import { faStar} from '@fortawesome/free-solid-svg-icons'
+import Breadcrumb from '../Breadcrumb/Breadcrumb';
 
 const CourseDetails = () => {
     return (
@@ -10,9 +11,10 @@ const CourseDetails = () => {
          <div className='courseDetails'>
             <h1>Course Details</h1>
             <div className='coursedetails-pagelink'>
-                <Link to="/">Home /</Link>
-                <Link to="/course">Course /</Link>
-                <Link to="/coursedetails">Course Details /</Link>
+                {/* <Link to="/">Home </Link>
+                <Link to="/course">Course /</Link> */}
+                {/* <Link to="/coursedetails">Course Details /</Link> */}
+                <Breadcrumb></Breadcrumb>
             </div>
          </div>
          <div className="coursedetails-img  row ">

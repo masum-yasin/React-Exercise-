@@ -4,6 +4,7 @@ import AwesomeFeatures from './../AwesomeFeatures/AwesomeFeatures';
 
 import Client from './../Client/Client';
 import { Link } from 'react-router-dom';
+import Breadcrumb from '../Breadcrumb/Breadcrumb';
 
 
 const AboutC = () => {
@@ -14,8 +15,9 @@ const AboutC = () => {
           <h2>About Us</h2>
         </div>
         <div className='link_page'>
-          <Link to="/">Home /</Link>
-          <a href="/about">About Us</a>
+          {/* <Link to="/">Home /</Link>
+          <a href="/about">About Us</a> */}
+          <Breadcrumb></Breadcrumb>
         </div>
          </div>
          <div className="welcome-img-section row">
