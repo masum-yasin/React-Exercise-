@@ -43,7 +43,7 @@ const router = createBrowserRouter([
       {
         path:"service/:serviceId",
         element:<ServiceDetails></ServiceDetails>,
-        loader:({params})=>fetch(`http://localhost:8080/serviceall/${params.serviceId}`)
+        loader:({params})=>fetch(`http://localhost:8080/service/${params.serviceId}`)
       },
     {
       path:'team',

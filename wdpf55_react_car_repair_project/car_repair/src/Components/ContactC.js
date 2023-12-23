@@ -1,6 +1,27 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
 
 export default function ContactC() {
+    const [customerInfo, setCustomerInfo] = useState({});
+    const navigate = useNavigate();
+    const handleSubmit = (e)=> {
+        e.preventDefault();
+        customerInsert();
+       
+    }
+    const handleChange = (e)=> {
+        const name = e.target.name;
+        const value = e.target.value;
+        setCustomerInfo((val)=>({...val, [name]:value}));
+    }
+    const customerInsert = ()=>{
+        axios.post("http://localhost/React_Exercise/React-Exercise-/wdpf55_react_car_repair_project/car_repair/api/customerInsert.php", {data:customerInfo}).then(res=>{
+            alert(res.data.msg);
+            return navigate('/contact');
+        })
+       
+    }
   return (
     <>
     <div class="container-xxl py-5">
@@ -41,30 +62,49 @@ export default function ContactC() {
                 <div class="col-md-6">
                     <div class="wow fadeInUp" data-wow-delay="0.2s">
                         <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="https://htmlcodex.com/contact-form">Download Now</a>.</p>
-                        <form>
+                        <form   onSubmit={handleSubmit}>
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name"/>
+                                        <input type="text" class="form-control" id="name" placeholder="Your Name" name='name' value={customerInfo.name} onChange={handleChange} />
                                         <label for="name">Your Name</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email"/>
+                                        <input type="email" class="form-control" id="email" placeholder="Your Email" name='email' value={customerInfo.email} onChange={handleChange}/>
                                         <label for="email">Your Email</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject"/>
+                                        <input type="number" class="form-control" id="subject" placeholder=" Enter Phone Number" name='phone' value={customerInfo.phone} onChange={handleChange}/>
+                                        <label for="subject">Phone Number</label>
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject" name='subject' value={customerInfo.subject} onChange={handleChange}/>
                                         <label for="subject">Subject</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style={{height: "100px"}}></textarea>
-                                        <label for="message">Message</label>
+                                        <input type="text" class="form-control" id="subject" placeholder="Subject" name='state' value={customerInfo.state} onChange={handleChange}/>
+                                        <label for="subject">State</label>
+                                    </div>
+                                </div>
+                                {/* <div class="col-12">
+                                    <div class="form-floating">
+                                        <input type="date" class="form-control" id="subject" placeholder="Subject" name='date' value={customerInfo.date} onChange={handleChange}/>
+                                        <label for="subject">Date</label>
+                                    </div>
+                                </div> */}
+                                <div class="col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style={{height: "100px"}} name='address' value={customerInfo.address} onChange={handleChange}></textarea>
+                                        <label for="message">Address</label>
                                     </div>
                                 </div>
                                 <div class="col-12">

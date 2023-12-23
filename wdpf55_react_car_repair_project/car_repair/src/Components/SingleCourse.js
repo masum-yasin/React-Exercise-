@@ -3,7 +3,7 @@ import Service from './../pages/Service';
 import { Link } from 'react-router-dom';
 
 const SingleCourse = ({myserive}) => {
- const {service,description,price,image}=myserive;
+ const {id,service,description,price,image,date_created}=myserive;
     // console.log(myserive);
 
     return (
@@ -15,11 +15,11 @@ const SingleCourse = ({myserive}) => {
     <p className="card-text">{description}</p>
   </div>
   <ul className="list-group list-group-flush">
-<li className="list-group-item">Dapibus ac facilisis in</li>
+<li className="list-group-item">{date_created}</li>
     
   </ul>
   <div className="card-body">
-    {/* <Link to={`/service/${id}`} className="card-link">Service Details</Link> */}
+    <Link to={`/service/${id}`} className="card-link">Service Details</Link>
   
   </div>
 </div>
