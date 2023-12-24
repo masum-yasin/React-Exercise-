@@ -15,11 +15,11 @@ const SingleCourse = ({myserive}) => {
     <p className="card-text">{description}</p>
   </div>
   <ul className="list-group list-group-flush">
-<li className="list-group-item">{date_created}</li>
+<li className="list-group-item text-danger">{date_created}</li>
     
   </ul>
   <div className="card-body">
-    <Link to={`/service/${id}`} className="card-link">Service Details</Link>
+    <Link to={`/service/${id}`} className="card-link btn btn-info text-white">Service Details</Link>
   
   </div>
 </div>
