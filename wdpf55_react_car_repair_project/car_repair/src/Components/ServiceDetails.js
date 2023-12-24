@@ -1,11 +1,39 @@
-import React from "react";
-import Service from "./../pages/Service";
+import React, { useState } from "react";
+// import Service from "./../pages/Service";
 
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const ServiceDetails = () => {
   const serviceDetails = useLoaderData();
-  // console.log(serviceDetails[0]);
+  console.log(serviceDetails[0].service);
+
+  const [customerInfo, setCustomerInfo] = useState({});
+    const navigate = useNavigate();
+
+    const handleSubmit = (e)=> {
+        e.preventDefault();
+        customerInsert();
+       
+    }
+    const handleChange = (e)=> {
+        const name = e.target.name;
+        const value = e.target.value;
+        setCustomerInfo((val)=>({...val, [name]:value}));
+    }
+    const customerInsert = ()=>{
+      const dataTospand ={
+        ...customerInfo,
+        service_name:serviceDetails[0].service,
+        price:serviceDetails[0].price
+      }
+        axios.post("http://localhost/React_Exercise/React-Exercise-/wdpf55_react_car_repair_project/car_repair/api/Booking.php", {data:dataTospand}).then(res=>{
+            alert(res.data.msg);
+            // return navigate('/contact');
+        })
+        console.log(customerInfo);
+       
+    }
   return (
     <>
       <div className="row">
@@ -52,12 +80,19 @@ const ServiceDetails = () => {
        </ul>
   </div>
   <div className="col-lg-3 mt-5 border border-dark p-5">
-  <form action="" >
-    <img className="mb-4 border" src="/assets/img/pexels-andrea-piacquadio-3807517.jpg"  style={{width:'300px', borderColor:'orange'}} alt="" />
-    <input type="text"  placeholder="Service Title -" style={{padding:'15px',width:'300px', marginTop:'10px', borderColor:'orange' }}/>
-    <input type="text" placeholder="Price" style={{padding:'15px', width:'300px',marginTop:'10px', borderColor:'orange'}} />
-    <input type="text" placeholder="Enter Your Name" style={{padding:'15px', width:'300px',marginTop:'10px',  borderColor:'orange'}} />
-    <input type="text" placeholder="Enter Your Number" style={{padding:'15px', width:'300px',marginTop:'10px', borderColor:'orange'}}/>
+  <form action="" onSubmit={handleSubmit} >
+    <img className="mb-4 border" src="/assets/img/pexels-andrea-piacquadio-3807517.jpg"  style={{width:'300px', borderColor:'orange'}}  alt="" />
+    <h3 className="card-title text-danger  fw-bolder">
+                Service Name:{serviceDetails[0].service}
+              </h3>
+              <h4 className="card-title text-success ">
+                Service Price:{serviceDetails[0].price}
+              </h4>
+
+    <input type="text" placeholder="Enter Your Name" style={{padding:'15px', width:'300px',marginTop:'10px',  borderColor:'orange'}} onChange={handleChange} name="user_name" />
+    <input type="number" placeholder="Enter Your Number" style={{padding:'15px', width:'300px',marginTop:'10px', borderColor:'orange'}} onChange={handleChange} name="mobile"/>
+
+    <input type="submit" name="submit" placeholder="submit" style={{padding:'15px', width:'300px',marginTop:'10px', borderColor:'orange'}}/>
   </form>
   </div>
       </div>
