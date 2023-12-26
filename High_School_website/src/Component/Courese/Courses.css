@@ -38,7 +38,7 @@ h2 button.courses-price{
     background-color: darkblue;
     color: aliceblue;
     width: 100px;
-    margin-top: 20px;
+    margin-top: -20px;
     margin-bottom:20px;
     
 }
