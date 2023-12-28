@@ -12,15 +12,27 @@
    
 }
 /* search form */
-.search-form input,button, h4{
+.search-form {
  background-color: dodgerblue;
  padding:15px;
  width:350px;
+ height:200px;
  color: white;
+ 
 }
 .search-form h4{
     margin-bottom: 0;
 }
+.search-form  {
+    background-color: dodgerblue;
+   
+   
+}
 .search-form input{
-    color: white;
+    padding:10px;
+    color:white;
+    margin-top:30px;
+}
+.search-form button{
+    padding: 10px;
 }

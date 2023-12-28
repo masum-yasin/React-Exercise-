@@ -11,8 +11,10 @@ const Breadcrumb = () => {
             <Link to='/'>Home</Link>
             {
                 pathnames.map((name,index)=>(<span key={index}>
-                        {'/'}
-                        <Link to={`/${pathnames.slice(0,index +1).join('/')}`}>{name}</Link>
+                         
+                         {'/'} 
+                         
+                         <Link to={`/${pathnames.slice(0,index +1).join('/')}`}>{name}</Link>
                 </span>))
             }
             </div> 
