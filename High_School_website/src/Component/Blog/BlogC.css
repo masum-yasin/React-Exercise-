@@ -1,0 +1,26 @@
+.blog-header-img img{
+    width:1350px;
+    height:500px;
+   
+}
+/* blog heading */
+.blog-heading h1{
+    font-size:50px;
+    text-align: center;
+    margin-top: 30px;
+    color: orange;
+   
+}
+/* search form */
+.search-form input,button, h4{
+ background-color: dodgerblue;
+ padding:15px;
+ width:350px;
+ color: white;
+}
+.search-form h4{
+    margin-bottom: 0;
+}
+.search-form input{
+    color: white;
+}
