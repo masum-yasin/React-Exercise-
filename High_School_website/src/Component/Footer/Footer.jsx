@@ -1,11 +1,14 @@
 import React from 'react';
 import './Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import {faTwitter } from '@fortawesome/free-solid-svg-icons'
+import {faTwitter} from '@fortawesome/free-solid-svg-icons'
+
+
 
 const Footer = () => {
     return (
         <>
+        <div className='footer-background-color'>
         <div className='footer-section'>
          <div className='footer-heading'>
          <h4>Top Product</h4>
@@ -46,8 +49,18 @@ const Footer = () => {
       </form>
         </div>
          </div>
-         <FontAwesomeIcon icon="fa-brands fa-twitter" />
-        </div> 
+         </div> 
+        <div className='footer-img'>
+       <img src={'img/courses_icon/logo-light.png'} alt="" />
+       </div>
+       <div>
+        <h3>FOLLOW US ON</h3>
+        {/* <FontAwesomeIcon icon={faFacebook} /> */}
+        <FontAwesomeIcon icon={faTwitter} />
+      
+       </div>
+        </div>
+      
         
         </>
     );
