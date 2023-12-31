@@ -67,16 +67,7 @@ const BlogC = () => {
      <FontAwesomeIcon icon={faUserTie}  className='text-warning' /><p>Admin</p>
      <FontAwesomeIcon icon={faBook} className='text-warning' /><p >Business Studies</p>
      </div>
-     
-     
-     
-
-  
-    
-     
- 
-
-        </div>
+     </div>
         <div className="col-lg-4 mt-5">
         <form className="d-flex">
         
@@ -86,9 +77,27 @@ const BlogC = () => {
     <button classname="btn btn-outline-primary" type="submit">Search</button>
   </div>
 </form>
-<div>
-  <h1>Categories</h1>
-  <h6>Business Studies</h6>
+<h1 className='categories-heading'>Categories</h1>
+<div className='categories-item'>
+<h6>Business Studies</h6>
+<p>3</p>
+
+ 
+ </div>
+<div className='categories-item'>
+<h6>Civil Engineering</h6>
+ <p>6</p>
+</div>
+<div className='categories-item'>
+  <h6>Computer Engineering</h6>
+  <p>5</p>
+</div>
+<div className='categories-item'>
+  <h6>General Science</h6>
+  <p>4</p>
+</div>
+<div className='categories-item'>
+  <h6>Graphics Design</h6>
   <p>3</p>
 </div>
 </div>

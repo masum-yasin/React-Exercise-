@@ -16,18 +16,19 @@ margin-top:30px;
 }
 /* search form */
 .search-form {
- background-color: dodgerblue;
+ background-color:darkturquoise;
  padding:15px;
  width:350px;
  height:200px;
  color: white;
+ margin-top:30px;
  
 }
 .search-form h4{
     margin-bottom: 0;
 }
 .search-form  {
-    background-color: dodgerblue;
+    background-color:darkturquoise;
    
    
 }
@@ -39,3 +40,24 @@ margin-top:30px;
 .search-form button{
     padding: 10px;
 }
+/* categories section start */
+.categories-heading {
+   margin-top:50px;
+   background-color: darkturquoise;
+   color: white;
+   width:350px;
+   padding:10px;
+}
+.categories-item{
+    display: flex;
+    justify-content: space-between;
+    
+   
+    margin-top:40px;
+    border-bottom: 1px solid black;
+    width:80%;
+  
+
+}
+
+
