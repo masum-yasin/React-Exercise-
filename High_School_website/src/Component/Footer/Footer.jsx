@@ -49,13 +49,17 @@ const Footer = () => {
         </div>
          </div>
          </div> 
-        <div className='footer-img'>
+       <div className='footer-examin-img'>
+       <div className='footer-img'>
        <img src={'img/courses_icon/logo-light.png'} alt="" />
        </div>
        <div>
-        <h3>FOLLOW US ON</h3>
-      
+        <h1 className='text-white'>GET COURSE NOW!!!</h1>
+        <button className='footer-button'>ENROLL NOW</button>
        </div>
+       </div>
+
+       
         </div>
       
         
