@@ -100,7 +100,12 @@ const BlogC = () => {
   <h6>Graphics Design</h6>
   <p>3</p>
 </div>
+<div className='new-courses'>
+  <img src="" alt="" />
+  <h3>Resigtation Our</h3>
 </div>
+</div>
+
     </div>
       </>
     );

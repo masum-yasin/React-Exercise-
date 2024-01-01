@@ -55,8 +55,11 @@ margin-top:30px;
     border-bottom: 2px solid antiquewhite;
     width:80%;
   }
-  .categories-item:hover{
-    background-color: red;
+  .new-courses{
+    background-image: url('img/blog/widget_img.jpg');
+    background-repeat: no-repeat;
+    height: 550px;
+    
   }
-
+  
 
