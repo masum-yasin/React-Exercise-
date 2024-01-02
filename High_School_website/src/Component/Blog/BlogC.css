@@ -62,5 +62,45 @@ margin-top:30px;
     margin-top:70px;
     
   }
+  .new-course-heading{
+    color: white;
+    padding-top:60px; 
+    text-align: center;
+
+  }
+  .new-course-heading h1{
+    font-size:45px;
+    font-weight:bolder;
+  }
+  .new-course-heading button{
+    padding:20px;
+    width: 200px;
+    margin-top: 10px;
+    background-color: orange;
+    color: white;
+  }
+  .recent-heading{
+    background-color: rgb(22, 188, 190);
+    width: 370px;
+    padding:1px;
+    color: white;
+    
+  }
+  .recent-heading h2{
+   margin-top: 10px;
+   padding-left:15px;
+  }
+  .recent-img img{
+    width:120px;
+    height:120px;
+   
+   
+  }
+  .recent-img{
+    display: flex;
+    gap: 30px;
+    margin-top: 50px;
+  }
+
   
 

@@ -25,7 +25,7 @@ const BlogC = () => {
     </div>
     <div className="row">
         <div className="container col-lg-8 mt-5">
-     <img className='blog-img' src={'img/blog/blog1-770x450 (1).jpg'} alt="" />
+     <img className='blog-img' src={'img/blog/blog1.jpg'} alt="" />
      <div className='d-flex gap-5 mt-5'>
      <FontAwesomeIcon icon={faCalendarDays} className='text-warning'/><p >October 14, 2019</p>
      <FontAwesomeIcon icon={faComment} className='text-warning' /><p >Comments (3)</p>
@@ -102,8 +102,56 @@ const BlogC = () => {
 </div>
 <div className='new-courses'>
   <img src="" alt="" />
+  <div>
+  <div className='new-course-heading'>
   <h3>Resigtation Our</h3>
+  <h1>New Courses</h1>
+  <p className='mt-5'>Bur wemust ipsum dolor sit amet<br></br> consectetur adipisicing elit sed eiusmod<br></br> tempor incididunt ut labore</p>
+  <button>REGISTATION</button>
+  </div>
+  </div>
 </div>
+<div className='recent-heading'>
+  <h2 >Recent Posts</h2>
+  </div>
+ <div className='recent-img'>
+ <div>
+    <img src={'img/blog/blog1.jpg'} alt="" />
+  </div>
+  <div>
+    <h5>
+    Designing Users Across<br></br> Interview With Jemy
+    </h5>
+    <p>October 14, 2019</p>
+  </div>
+ </div>
+ <div className='recent-img'>
+ <div>
+    <img src={'img/blog/blog2.jpg'} alt="" />
+  </div>
+  <div>
+    <h5>
+    Month Web Development<br></br> Update React Hook
+   </h5>
+   <p>October 14, 2019</p>
+  </div>
+ </div>
+ <div className='recent-img'>
+ <div>
+    <img src={'img/blog/blog4.jpg'} alt="" />
+  </div>
+  <div>
+    <h5>
+    Exploring The Latest Web<br></br> Design Trends    </h5>
+    <p>October 14, 2019</p>
+
+  </div>
+ </div>
+
+
+
+  
+
 </div>
 
     </div>
