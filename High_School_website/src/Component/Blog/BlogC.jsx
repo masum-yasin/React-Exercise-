@@ -25,13 +25,18 @@ const BlogC = () => {
     </div>
     <div className="row">
         <div className="container col-lg-8 mt-5">
-     <img className='blog-img' src={'img/blog/blog1.jpg'} alt="" />
+    <div>
+    <img className='blog-img' src={'img/blog/blog1.jpg'} alt="" />
      <div className='d-flex gap-5 mt-5'>
      <FontAwesomeIcon icon={faCalendarDays} className='text-warning'/><p >October 14, 2019</p>
      <FontAwesomeIcon icon={faComment} className='text-warning' /><p >Comments (3)</p>
      <FontAwesomeIcon icon={faUserTie}  className='text-warning' /><p>Admin</p>
      <FontAwesomeIcon icon={faBook} className='text-warning' /><p >Business Studies</p>
      </div>
+    <div className='parent'>
+    <a className='blog-ancor' href=""><h1 className='child'>Designing Users Across Interview With Jemy</h1></a>
+    </div>
+    </div>
      <img className='blog-img' src={'img/blog/blog4.jpg'} alt="" />
      <div className='d-flex gap-5 mt-3'>
      <FontAwesomeIcon icon={faCalendarDays} className='text-warning'/><p >October 14, 2019</p>

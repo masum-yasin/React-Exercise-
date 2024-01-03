@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css'
-import {  NavLink } from 'react-router-dom';
+import {  Link, NavLink } from 'react-router-dom';
 
 
 const Header = () => {
@@ -18,20 +18,20 @@ const Header = () => {
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <NavLink to='/' class="nav-link active" aria-current="page">Home</NavLink>
+                <Link to='/' class="nav-link active" aria-current="page">Home</Link>
               </li>
               <li class="nav-item">
-                <NavLink to='about' class="nav-link" >About</NavLink>
+                <Link to='about' class="nav-link" >About</Link>
               </li>
               <li class="nav-item">
-                <NavLink to='contact' class="nav-link" href="#">Contact</NavLink>
+                <Link to='contact' class="nav-link" href="#">Contact</Link>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Blog
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><NavLink to='blog' class="dropdown-item" href="#">Blog</NavLink></li>
+                  <li><Link to='blog' class="dropdown-item" href="#">Blog</Link></li>
                   <li><a class="dropdown-item" href="#">Blog Details</a></li>
                   
                 </ul>
@@ -41,8 +41,8 @@ const Header = () => {
                     Courses
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><NavLink to='/course' class="dropdown-item" href="#">Course</NavLink></li>
-                  <li><NavLink to='/coursedetails' class="dropdown-item" href="#">Courses Details</NavLink></li>
+                  <li><Link to='/course' class="dropdown-item" href="#">Course</Link></li>
+                  <li><Link to='/coursedetails' class="dropdown-item" href="#">Courses Details</Link></li>
                   
                 </ul>
               </li>
